@@ -1,0 +1,221 @@
+/* ================================
+   STYLE HALAMAN
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111827, #1f2937);
+    min-height: 100vh;
+    padding: 40px;
+    color: white;
+}
+
+
+/* ================================
+   JUDUL
+================================ */
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* ================================
+   TOMBOL TAMBAH
+================================ */
+
+.btn-tambah,
+button {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.btn-tambah:hover,
+button:hover {
+    transform: translateY(-3px);
+    background: #16a34a;
+}
+
+
+/* ================================
+   CONTAINER TABEL
+================================ */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+/* ================================
+   TABEL
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #333;
+}
+
+
+/* HEADER */
+
+th {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* ISI TABEL */
+
+td {
+    padding: 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 15px;
+}
+
+
+/* WARNA SELANG SELING */
+
+tr:nth-child(even) {
+    background: #f3f4f6;
+}
+
+tr:nth-child(odd) {
+    background: white;
+}
+
+
+/* HOVER BARIS */
+
+tr:hover {
+    background: #dbeafe;
+
+    transition: 0.3s;
+}
+
+
+/* ================================
+   LINK EDIT
+================================ */
+
+.aksi-edit {
+    background: #f59e0b;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.aksi-edit:hover {
+    background: #d97706;
+
+    transform: scale(1.05);
+}
+
+
+/* ================================
+   LINK HAPUS
+================================ */
+
+.aksi-hapus {
+    background: #ef4444;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.aksi-hapus:hover {
+    background: #dc2626;
+
+    transform: scale(1.05);
+}
+
+
+/* ================================
+   RESPONSIVE HP
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+    .aksi-edit,
+    .aksi-hapus {
+        display: inline-block;
+        margin: 3px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+}

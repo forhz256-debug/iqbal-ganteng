@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tambah Data Alat</title>
+  <link rel="stylesheet" href="../skin2.css">
+</head>
+
+<body>
+
+<h2>TAMBAH DATA ALAT</h2>
+
+<form action="kirim.php" method="POST">
+
+    <p>
+        ID Alat
+        <br>
+        <input type="text" name="id_alat" required>
+    </p>
+
+    <p>
+        Nama Alat
+        <br>
+        <input type="text" name="nama_alat" required>
+    </p>
+
+    <p>
+        ID Kategori
+        <br>
+        <input type="text" name="id_kategori" required>
+    </p>
+
+    <p>
+        Stok
+        <br>
+        <input type="number" name="stok" required>
+    </p>
+
+    <p>
+        Kondisi
+        <br>
+
+        <select name="kondisi">
+
+            <option value="Baik">
+                Baik
+            </option>
+
+            <option value="Cukup">
+                Cukup
+            </option>
+
+            <option value="Rusak">
+                Rusak
+            </option>
+
+        </select>
+
+    </p>
+
+    <button type="submit">
+        Simpan
+    </button>
+
+</form>
+
+<br>
+
+<a href="tampil.php">
+    Kembali
+</a>
+
+</body>
+
+</html>

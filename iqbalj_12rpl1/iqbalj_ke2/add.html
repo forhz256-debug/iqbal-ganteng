@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tambah Data Peminjaman</title>
+  <link rel="stylesheet" href="../skin2.css">
+</head>
+
+<body>
+
+<h2>TAMBAH DATA PEMINJAMAN</h2>
+
+<form action="kirim.php" method="POST">
+
+    <p>
+        ID Peminjaman
+        <br>
+        <input type="text" name="id_peminjaman" required>
+    </p>
+    <p>
+        ID User
+        <br>
+        <select name="id_user" required>
+            <option value="">Pilih ID User</option>
+            <option value="U001">U001</option>
+            <option value="U002">U002</option>
+            <option value="U003">U003</option>
+            <option value="U004">U004</option>
+            <option value="U005">U005</option>
+        </select>
+    </p>
+
+    <p>
+        Tanggal Pinjam
+        <br>
+        <input type="date" name="tgl_pinjam" required>
+    </p>
+
+    <p>
+        Tanggal Kembali Rencana
+        <br>
+        <input type="date" name="tgl_kembali_rencana" required>
+    </p>
+
+    <p>
+        Status
+        <br>
+
+        <select name="status">
+
+            <option value="Dipinjam">
+                Dipinjam
+            </option>
+
+            <option value="Selesai">
+                Selesai
+            </option>
+
+        </select>
+
+    </p>
+
+    <button type="submit">
+        Simpan
+    </button>
+
+</form>
+
+<br>
+
+<a href="tampil.php">
+    Kembali
+</a>
+
+</body>
+
+</html>

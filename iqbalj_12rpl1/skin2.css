@@ -1,0 +1,250 @@
+/* =========================
+   IMPORT FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at top left, #0d47a1, transparent 35%),
+        radial-gradient(circle at bottom right, #00bcd4, transparent 30%),
+        #050b18;
+
+    color: white;
+}
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+
+    background: rgba(15, 23, 42, 0.95);
+
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 20px rgba(0, 212, 255, 0.2),
+        0 0 50px rgba(0, 0, 0, 0.7);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 35px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+label {
+    display: block;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+
+    color: #00d9ff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+input,
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #0f172a;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+input:focus,
+select:focus {
+    border-color: #00d9ff;
+
+    box-shadow:
+        0 0 5px #00d9ff,
+        0 0 15px rgba(0, 217, 255, 0.4);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+input::placeholder {
+    color: #64748b;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+select {
+    cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON SIMPAN
+========================= */
+button,
+input[type="submit"] {
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #00d9ff,
+        #0066ff
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 5px 15px rgba(0, 102, 255, 0.4);
+}
+
+
+/* =========================
+   HOVER BUTTON
+========================= */
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 217, 255, 0.6);
+}
+
+
+/* =========================
+   CLICK BUTTON
+========================= */
+button:active,
+input[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   LINK KEMBALI
+========================= */
+a {
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #00d9ff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+a:hover {
+    color: white;
+
+    text-shadow:
+        0 0 10px #00d9ff;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    form {
+        margin: 20px auto;
+        padding: 25px 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 22px;
+    }
+
+}
